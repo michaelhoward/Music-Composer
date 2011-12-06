@@ -1,0 +1,32 @@
+
+<html>
+<title>Music Composer</title>
+
+<body>
+
+<br/>
+
+<div id='menu'>
+<button onclick=AddPart(0,'Test','Test') id='SetupButton'>New Part</button>
+<button onclick=AddNewBar(0,4,4,'treble') id='NewBarButton'>New Bar</button>
+<button onclick=drawMusic() id='Redraw'>ReDraw</button>
+
+</div>
+<canvas id='new_canvas' width=1000px height=500px style='border:1px solid red' ></canvas>
+
+<br/>
+<div id='control' style='position:absolute; border:1px solid black; top:100px; left: 1000px; width: 100px; height: 300px'>
+Control Panel<br>
+Bar Width: <button id='barWidth_increase'>+</button><button id='barWidth_decrease'>-</button>
+
+
+</div>
+
+
+<script src='music.js'></script>
+<script type="text/javascript">
+Setup('new_canvas');
+</script>
+
+</body>
+</html>
